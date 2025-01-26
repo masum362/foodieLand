@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className='my-8'>
       <Outlet />
+      </div>
       <Footer />
     </>
   )

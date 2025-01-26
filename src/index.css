@@ -125,4 +125,12 @@
     font-family: "Inter", serif;
 
   }
+
+  .text-black-60{
+    @apply text-black/60;
+  }
+  .section-title {
+    @apply text-5xl font-semibold;
+  }
+  
 }

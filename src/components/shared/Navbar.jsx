@@ -23,18 +23,18 @@ const Navbar = () => {
     <div className='flex items-center justify-between px-2 md:px-4 lg:px-12 py-6 border-b'>
       <div className='flex items-center justify-center gap-2'>
 
-        <div className='md:hidden flex '>
+        <div className='md:hidden flex gap-2 '>
           <Sheet>
             <SheetTrigger><Menu /></SheetTrigger>
             <SheetContent side={'left'} className="w-[200px]">
               <SheetHeader>
-                <ul className='space-y-4'>
+                <div className='space-y-4 flex flex-col mt-4'>
                   {menuOptions.map((option, index) => (
                     <NavLink to={option.path} key={index}  className={({ isActive }) =>
-                      isActive ? "bg-gray-300/50 p-2 px-6 rounded-lg duration-150" : "hover:bg-gray-300/50 p-2 px-6 rounded-lg duration-150"
-                    }><li >{option.title}</li></NavLink>
+                      isActive ? "bg-primaryBackground p-2 px-4  rounded-lg duration-150 w-full" : "hover:bg-primaryBackground p-2 px-4  rounded-lg duration-150 w-full"
+                    }><span>{option.title}</span></NavLink>
                   ))}
-                </ul>
+                </div>
               </SheetHeader>
             </SheetContent>
           </Sheet>
@@ -42,10 +42,10 @@ const Navbar = () => {
 
        <Link to='/'>  <img src={logo} alt="foolieLand" /></Link>
       </div>
-      <ul className='hidden md:flex items-center space-x-8 lg:space-x-4 '>
+      <ul className='hidden md:flex items-center space-x-8 md:space-x-4 '>
         {menuOptions.map((option, index) => (
           <NavLink to={option.path} key={index}className={({ isActive }) =>
-            isActive ? "bg-gray-300/50 p-2 px-6 rounded-lg duration-150" : "hover:bg-gray-300/50 p-2 px-6 rounded-lg duration-150"
+            isActive ? "bg-primaryBackground p-2 px-4 rounded-lg duration-150" : "hover:bg-primaryBackground p-2 px-4 rounded-lg duration-150"
           }><li >{option.title}</li></NavLink>
         ))}
       </ul>

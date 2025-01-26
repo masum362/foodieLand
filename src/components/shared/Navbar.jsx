@@ -10,7 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 const Navbar = () => {
   const menuOptions = [
     { title: 'Home', path: "/" },
@@ -20,27 +20,33 @@ const Navbar = () => {
     { title: 'About Us', path: "/about-us" },
   ]
   return (
-    <div className='flex items-center justify-between px-2 md:px-4 lg:px-12 py-8 border-b'>
-      <div className='flex items-center justify-self-center gap-2'>
+    <div className='flex items-center justify-between px-2 md:px-4 lg:px-12 py-6 border-b'>
+      <div className='flex items-center justify-center gap-2'>
 
-        <Sheet>
-          <SheetTrigger><Menu /></SheetTrigger>
-          <SheetContent side={'left'} className="w-[200px]">
-            <SheetHeader>
-              <ul className='space-y-4'>
-                {menuOptions.map((option, index) => (
-                  <NavLink to={option.path} key={index}><li className='hover:bg-white/25' >{option.title}</li></NavLink>
-                ))}
-              </ul>
-            </SheetHeader>
-          </SheetContent>
-        </Sheet>
+        <div className='md:hidden flex '>
+          <Sheet>
+            <SheetTrigger><Menu /></SheetTrigger>
+            <SheetContent side={'left'} className="w-[200px]">
+              <SheetHeader>
+                <ul className='space-y-4'>
+                  {menuOptions.map((option, index) => (
+                    <NavLink to={option.path} key={index}  className={({ isActive }) =>
+                      isActive ? "bg-gray-300/50 p-2 px-6 rounded-lg duration-150" : "hover:bg-gray-300/50 p-2 px-6 rounded-lg duration-150"
+                    }><li >{option.title}</li></NavLink>
+                  ))}
+                </ul>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
+        </div>
 
-        <img src={logo} alt="foolieLand" />
+       <Link to='/'>  <img src={logo} alt="foolieLand" /></Link>
       </div>
-      <ul className='hidden md:flex items-center space-x-8 lg:space-x-8 '>
+      <ul className='hidden md:flex items-center space-x-8 lg:space-x-4 '>
         {menuOptions.map((option, index) => (
-          <NavLink to={option.path} key={index}><li >{option.title}</li></NavLink>
+          <NavLink to={option.path} key={index}className={({ isActive }) =>
+            isActive ? "bg-gray-300/50 p-2 px-6 rounded-lg duration-150" : "hover:bg-gray-300/50 p-2 px-6 rounded-lg duration-150"
+          }><li >{option.title}</li></NavLink>
         ))}
       </ul>
       <div className='flex items-center space-x-4 lg:space-x-8'>

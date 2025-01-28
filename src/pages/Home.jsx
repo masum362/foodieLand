@@ -1,14 +1,14 @@
-import Categories from "@/components/Categories"
-import CheckOut from "@/components/CheckOut"
-import ChefInYou from "@/components/ChefInYou"
-import Hero from "@/components/Hero"
-import Newsletter from "@/components/Newsletter"
-import RecipeOfTheDay from "@/components/RecipeOfTheDay"
-import Recipes from "@/components/Recipes"
+import Categories from "@/components/categories/Categories"
+import CheckOut from "@/components/checkout/CheckOut"
+import ChefInYou from "@/components/chefinyou/ChefInYou"
+import Hero from "@/components/hero/Hero"
+import Newsletter from "@/components/newsletter/Newsletter"
+import RecipeOfTheDay from "@/components/recipeOfTheDay/RecipeOfTheDay"
+import Recipes from "@/components/recipes/Recipes"
 
 const Home = () => {
     return (
-        <div>
+        <div className="space-y-24" >
             <Hero />
             <Categories />
             <Recipes />

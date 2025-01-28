@@ -20,7 +20,7 @@ const Navbar = () => {
     { title: 'About Us', path: "/about-us" },
   ]
   return (
-    <div className='flex items-center justify-between px-2 md:px-4 lg:px-12 py-6 border-b'>
+    <nav className='flex items-center justify-between px-2 md:px-4 lg:px-12 py-6 border-b'>
       <div className='flex items-center justify-center gap-2'>
 
         <div className='md:hidden flex gap-2 '>
@@ -55,7 +55,7 @@ const Navbar = () => {
         <FaInstagram />
 
       </div>
-    </div>
+    </nav>
   )
 }
 

@@ -8,7 +8,7 @@ import Badge from '@/assets/Badge.png'
 import { Button } from '../ui/button'
 const Hero = () => {
   return (
-    <section className='hero flex gap-4   lg:max-h-screen'>
+    <header className='hero flex gap-4   lg:max-h-screen'>
     <div className='hidden lg:flex bg-primaryBackground w-8 rounded-r-3xl'></div>
     <div className='flex-1 flex flex-col md:flex-row m-2 lg:m-0 bg-primaryBackground rounded-3xl overflow-hidden'>
       {/* Left content column */}
@@ -63,7 +63,7 @@ const Hero = () => {
       </div>
     </div>
     <div className='hidden lg:flex bg-primaryBackground w-8 rounded-l-3xl'></div>
-  </section>
+  </header>
   )
 }
 

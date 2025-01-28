@@ -77,7 +77,7 @@ const RecipeOfTheDay = () => {
 
   ]
   return (
-    <div className='section-padding'>
+    <section className='section-padding'>
       <div className="flex items-center justify-between gap4">
         <h2 className='section-title max-w-lg'>Try this delicious recipe
           to make your day</h2>
@@ -88,7 +88,7 @@ const RecipeOfTheDay = () => {
           <RecipeCard key={index} cardDetails={recipe} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

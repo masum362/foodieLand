@@ -5,8 +5,8 @@ import newsLetterRight from '@/assets/newsletter-right.png'
 
 const Newsletter = () => {
   return (
-    <div className='md:mx-12 m-2 px-2 md:px-4 lg:px-12 py-16 space-y-6 text-center bg-primaryBackground relative flex flex-col gap-4 rounded-3xl  -z-20'>
-  {/* Background images with lower z-index */}
+    <section className='md:mx-12 m-2 px-2 md:px-4 lg:px-12 py-16 space-y-6 text-center bg-primaryBackground relative flex flex-col gap-4 rounded-[60px] overflow-hidden  -z-20'>
+  
   <img 
     src={newsLetterLeft} 
     alt="fruits image" 
@@ -18,7 +18,6 @@ const Newsletter = () => {
     className='absolute right-0 bottom-0 -z-10 max-w-[200px] md:max-w-none opacity-30 md:opacity-100' 
   />
   
-  {/* Content with higher z-index */}
   <div className='relative z-10 space-y-6'>
     <h2 className="section-title">Deliciousness to your inbox</h2>
     <p className="text-black-60 max-w-xl mx-auto">
@@ -35,7 +34,7 @@ const Newsletter = () => {
       </Button>
     </div>
   </div>
-</div>
+</section>
   )
 }
 

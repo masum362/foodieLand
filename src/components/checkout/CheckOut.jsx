@@ -104,7 +104,7 @@ const CheckOut = () => {
   ]
 
   return (
-    <div className='section-padding  bg-gradient-to-b from-[#E7F9FD00]  to-[#E7F9FD] ' >
+    <sectioin className='section-padding  bg-gradient-to-b from-[#E7F9FD00]  to-[#E7F9FD] ' >
       <h2 className='section-title text-center'>Check out @foodieland on Instagram</h2>
       <p className='text-black-60 max-w-3xl text-center mx-auto'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
 
@@ -121,7 +121,7 @@ const CheckOut = () => {
         </Button>
         
       </div>
-    </div>
+    </sectioin>
   )
 }
 

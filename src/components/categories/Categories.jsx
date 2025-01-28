@@ -48,7 +48,7 @@ const Categories = () => {
     }
   ]
   return (
-    <div className='section-padding'>
+    <section className='section-padding'>
       <div className='flex items-center justify-between gap-4'>
         <h1 className='section-title'>Categories</h1>
         <Button className="bg-primaryBackground text-black font-semibold p-4 md:p-6 hover:bg-secondaryBackground rounded-2xl">View All Categories</Button>
@@ -58,7 +58,7 @@ const Categories = () => {
           <CatCard key={index} category={category} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

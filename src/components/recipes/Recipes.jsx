@@ -83,7 +83,7 @@ const Recipes = () => {
   ]
 
   return (
-    <div className='section-padding'>
+    <section className='section-padding'>
       <h1 className="section-title text-center">
         Simple and tasty recipes
       </h1>
@@ -100,7 +100,7 @@ const Recipes = () => {
           <RecipeCard key={index} cardDetails={recipe} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

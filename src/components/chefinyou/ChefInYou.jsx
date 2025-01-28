@@ -7,10 +7,10 @@ import { Button } from '../ui/button'
 
 const ChefInYou = () => {
   return (
-    <section className='hero flex gap-4 lg:max-h-screen px-2 md:px-4 lg:px-12 py-6'>
+    <section className='hero flex gap-4 lg:max-h-screen section-padding'>
       <div className='flex-1 flex flex-col md:flex-row m-2 lg:m-0 items-center justify-center  rounded-3xl overflow-hidden'>
         {/* Left content column */}
-        <div className='w-full md:w-1/2 p-6 sm:p-4 lg:p-10 flex flex-col justify-center'>
+        <div className='w-full md:w-1/2 p-6 sm:p-4 lg:py-10 flex flex-col justify-center'>
           <div className='space-y-6 max-w-2xl'>
 
             <h1 className='text-4xl lg:text-5xl font-semibold'>Everyone can be a

@@ -83,7 +83,7 @@ const Recipes = () => {
   ]
 
   return (
-    <div className='px-2 md:px-4 lg:px-12 py-6 space-y-6 '>
+    <div className='section-padding'>
       <h1 className="section-title text-center">
         Simple and tasty recipes
       </h1>

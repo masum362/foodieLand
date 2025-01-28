@@ -48,7 +48,7 @@ const Categories = () => {
     }
   ]
   return (
-    <div className='px-2 md:px-4 lg:px-12 py-6 '>
+    <div className='section-padding'>
       <div className='flex items-center justify-between gap-4'>
         <h1 className='section-title'>Categories</h1>
         <Button className="bg-primaryBackground text-black font-semibold p-4 md:p-6 hover:bg-secondaryBackground rounded-2xl">View All Categories</Button>

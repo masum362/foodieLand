@@ -48,12 +48,12 @@ const Categories = () => {
     }
   ]
   return (
-    <div className='px-2 md:px-4 lg:px-12 py-6'>
+    <div className='px-2 md:px-4 lg:px-12 py-6 '>
       <div className='flex items-center justify-between gap-4'>
         <h1 className='section-title'>Categories</h1>
         <Button className="bg-primaryBackground text-black font-semibold p-4 md:p-6 hover:bg-secondaryBackground rounded-2xl">View All Categories</Button>
       </div>
-      <div className='categories text-center flex items-center justify-center md:justify-between gap-4 my-12 flex-wrap'>
+      <div className='categories text-center flex items-center justify-center md:justify-between gap-4 my-8 flex-wrap'>
         {categories.map((category, index) => (
           <CatCard key={index} category={category} />
         ))}

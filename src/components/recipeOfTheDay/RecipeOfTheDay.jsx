@@ -78,7 +78,7 @@ const RecipeOfTheDay = () => {
   ]
   return (
     <section className='section-padding'>
-      <div className="flex items-center justify-between gap4">
+      <div className="flex items-center justify-between gap-4">
         <h2 className='section-title max-w-lg'>Try this delicious recipe
           to make your day</h2>
         <p className='text-black-60 max-w-xl'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>

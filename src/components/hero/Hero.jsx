@@ -4,10 +4,11 @@ import forkKnifeImage from '@/assets/ForkKnife.png'
 import heroElipse from '@/assets/Ellipse 2.png'
 import PlayCircleImage from '@/assets/PlayCircle.png'
 import heroImage from '@/assets/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.png'
+import Badge from '@/assets/Badge.png'
 import { Button } from '../ui/button'
 const Hero = () => {
   return (
-    <section className='hero flex gap-4   max-h-screen'>
+    <section className='hero flex gap-4   lg:max-h-screen'>
     <div className='hidden lg:flex bg-primaryBackground w-8 rounded-r-3xl'></div>
     <div className='flex-1 flex flex-col md:flex-row m-2 lg:m-0 bg-primaryBackground rounded-3xl overflow-hidden'>
       {/* Left content column */}
@@ -49,6 +50,11 @@ const Hero = () => {
       
       {/* Right image column */}
       <div className='w-full md:w-1/2 relative'>
+        <img 
+          src={Badge} 
+          alt="badge" 
+          className='absolute top-6 left-6 sm:top-6 sm:left-2 md:top-4   xl:top-12 xl:-left-12 w-36 sm:w-24 xl:w-36'
+        />
         <img 
           src={heroImage} 
           alt="hero" 

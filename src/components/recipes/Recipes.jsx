@@ -94,7 +94,7 @@ const Recipes = () => {
           <RecipeCard key={index} cardDetails={recipe} />
         ))}
         {/* ads image  here */}
-        <img src={recipeAds} alt="recipeAds" className="object-cover" />
+        <img src={recipeAds} alt="recipe Ads" className="object-cover" />
         {/* 6-8 cards here */}
         {recipes.slice(5, 8).map((recipe, index) => (
           <RecipeCard key={index} cardDetails={recipe} />

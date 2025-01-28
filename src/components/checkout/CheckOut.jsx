@@ -108,7 +108,7 @@ const CheckOut = () => {
       <h2 className='section-title text-center'>Check out @foodieland on Instagram</h2>
       <p className='text-black-60 max-w-3xl text-center mx-auto'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
 
-      <div className='social-cards grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 py-8'>
+      <div className='social-cards grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 py-8  '>
         {socialPost.map((socialCard, index) => (
           <SocialCard key={index} socialCard={socialCard} />
         ))}

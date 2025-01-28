@@ -5,7 +5,7 @@ import forkKnifeImage from '@/assets/ForkKnife.png'
 const RecipeCard = ({ cardDetails }) => {
   
     return (
-        <div className=' bg-gradient-to-b from-[#E7F9FD00]  to-[#E7F9FD]  rounded-2xl p-2'>
+        <div className='  rounded-2xl '>
             <div className="w-full overflow-hidden  " >
                 {/* Image Container */}
                 <div className="relative aspect-[4/3] overflow-hidden ">

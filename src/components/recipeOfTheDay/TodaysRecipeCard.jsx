@@ -23,11 +23,11 @@ const RecipeCard = ({ cardDetails }) => {
                 </div>
 
                 {/* Content */}
-                <div className="p-4 ">
-                    <h3 className="text-xl font-semibold mb-4">{cardDetails.title}</h3>
+                <div className=" py-2">
+                    <h3 className="text-lg font-semibold mb-4">{cardDetails.title}</h3>
                     <div className="flex items-center gap-4 text-gray-600">
                         <div className="flex items-center gap-2">
-                            <img src={timerImage} alt="timer" className="w-5 h-5" />
+                            <img src={timerImage} alt="timer" className ="w-5 h-5" />
                             <span>{cardDetails.time}</span>
                         </div>
                         <div className="flex items-center gap-2">
